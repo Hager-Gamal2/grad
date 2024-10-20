@@ -423,7 +423,7 @@
         padding-left: 34px;
         flex-direction: column;
         -webkit-box-pack: center;
-        -webkit-justify-content: center;
+        /* -webkit-justify-content: center; */
         align-items: center;
         border-radius: 50%;
         background-color: #35cfed;
@@ -437,8 +437,12 @@
         color: #fff;
         font-size: 22px;
         font-weight: 400;
+        position: relative;
+        top: 30px;
     }
     .connect-with .content img{
+        position: relative;
+        top: 30px;
         width: 35%;
         margin-bottom: 10px;
     }
