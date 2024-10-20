@@ -1,0 +1,498 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.parent, .landing, .learn-more, .our-brand, .imac-retina, .popular, .games, .best-choice, .connect-with, .much-better, .more-than {
+    max-width: 100%;
+    overflow: hidden;
+}
+.parent {
+    background-color: red;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1.75fr 1.25fr 1.5fr .75fr;
+    grid-template-areas: "landing   landing  learn-more learn-more"
+                         "our-brand  imac-retina imac-retina     popular"
+                         "games  best-choice best-choice  popular"
+                         " connect-with much-better more-than more-than";
+    }
+
+.landing {
+    flex-wrap: wrap;
+    grid-area: landing;
+    background-color: #FFFFFF;
+         
+}   
+.landing .container{
+    width: 75%;
+    margin:auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+} 
+    .landing .container .picture img{
+        margin-top: 40px;
+        position: relative;
+        top: 40px;
+        width: 100%;
+    }
+    .landing .content{
+        position: relative;
+        right:  40px;
+    }
+    .landing .content .p{
+        color: #9fa3a7;
+        font-family: "montserrat",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .landing .content .p p{
+        max-width: 1000px;
+    }
+    .landing .content h3{
+        margin-top: 10px; 
+         margin-bottom: 10px;
+        color: #333;
+        font-family: "arvo",sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: capitalize;
+        line-height: 32px;
+    }
+    .learn-more {
+        display: flex;
+        position: relative;
+        grid-area: learn-more;
+        background-color: #F7F8F9;
+        text-align: center;
+
+    }
+    .learn-more .container{
+        flex-wrap: wrap;
+        width: 75%;
+        margin: auto;
+        justify-content: space-around;
+    }
+    .learn-more .content{
+        position: absolute;
+        top: 23%;
+        left: 18%;
+        max-width: 500px;
+        
+    }
+    .learn-more .content h1{
+        display: flex;
+        font-family: "Arvo", serif;
+        font-family: 400;
+        font-size: 48px;
+
+    }
+    .learn-more .content .p{
+        color: #9fa3a7;
+        font-family:"montserrat",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+    .learn-more .content a{
+        color: #27b9c2;
+        font-family: "open sans",sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+    .our-brand {
+        grid-area: our-brand;
+        background-color: #F05638;
+    
+    }
+    .our-brand .container{
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 20px auto 0px;
+    }
+    .our-brand .content{
+        text-align: center;
+        margin-right:50px;
+        display: block;
+        justify-content: space-around;
+    }
+    .our-brand .content h3{
+        font-family: "arvo";
+        font-size: 22px;
+        font-weight: 700;
+        color: #fffbfb;
+        text-transform: capitalize;
+        display: block;
+        margin-bottom: 15px;
+
+    }
+    .our-brand .content a{
+        color: #ffc80a;
+        font-family: "open sens",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-decoration: none;
+
+    }
+    .our-brand .picture img{
+        width: 100%;
+    }
+    .our-brand .picture{
+        margin-left: -20px;
+        justify-content: space-around;
+
+    }
+
+    .imac-retina {
+        grid-area: imac-retina;
+        background-color: #fff;
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .imac-retina .item{
+        position: relative;
+    }
+    .imac-retina .item .content{
+        margin: 50px;
+        text-align: start;
+
+
+
+    }
+    .imac-retina .item .content .p{
+        font-family: "montserrat",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color: #9fa3a7;
+        margin-bottom: 20px;
+    }
+    .imac-retina .item .content h3{
+        font-family: "arvo",sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        color: #333333;
+    }
+    .imac-retina .item .picture{
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: -5px;
+    }
+    .imac-retina .item .picture img{
+        width: 100%;
+        position: relative;
+        right: 167px;
+
+    }
+    .imac-retina .item .p p{
+        margin: 50px 0px;
+        text-align: start;
+        font-family: "open sans",sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #9fa3a7;
+    }
+    .imac-retina .item a{
+        color: #27b9c2;
+        font-family: "open sans",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
+        right: 98px;
+        letter-spacing: 2px;
+
+    }
+    .imac-retina .item{
+        max-width: 45%;
+    }
+    .popular {
+        grid-area: popular;
+        background-color: #8F76BC;
+
+        
+    }
+    .popular .circle{
+        display: flex;
+        width: 373px;
+        height: 373px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #8166b0;
+        position: relative;
+        top: 40px;
+    }
+    .popular .circle .text-block{
+        font-size: 10px;
+        font-weight: 700;
+        font-family: "open sans",sans-serif;
+        border-radius: 60px;
+        background-color: #8B72B6;
+        background-image: url(https://uploads-ssl.webflow.com/5bc242f45a5ed923b1704210/5bc2f42d5a5ed9663e707e7d_Shape.png);
+        background-position:9px 50%;
+        padding: 5px 25px;
+        background-repeat: no-repeat;
+        background-size: 12px;
+        line-height: 23px;
+        letter-spacing: 2.4px;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .popular .circle .text-block p{
+        margin-left: 7px;
+    }
+    .popular .img img{
+        max-width: 60%;
+        display: inline-block;
+        position: relative;
+        left: 70px;
+        top: 30px;
+        vertical-align: middle;
+    }
+    .popular .text{
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    top: 30px;
+    left: 170px;
+    }
+    .popular .content{
+        position: relative;
+        top: 70px;
+        left: 40px;
+        text-align: center;
+        max-width:310px;
+    }
+    .popular .content h2{
+        margin-bottom: 5px;
+        color: #ffffff;
+        font-family: "arvo",sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .popular .content p{
+        margin-bottom: 30px;
+        font-family: "open sans",sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+    .popular .content a{
+        text-decoration: none;
+        border-radius: 60px;
+        background-color: #FFC80A;
+        padding:20px 30px;
+        color: #000;
+        text-transform: uppercase;
+        font-family: "open sans",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .games {
+        grid-area: games;
+        background-color: #F7F8F9;
+       
+    } 
+    .games .picture{
+        position: relative;
+        top: 20px;
+        left: 15px;
+    } 
+    .games .picture img{
+        width: 70%;
+    }  
+    .games .content{
+        position: relative;
+        top: 40px;
+        left: 95px;
+    } 
+    .games .content h3{
+        margin-bottom: 50px;
+        color: #333;
+        font-family: "arvo",sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        /* letter-spacing: 3px; */
+    }
+    .games .content a{
+        margin: 50px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #27b9c2;
+        font-family: "open sans",sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 3px;
+    }
+    .best-choice {
+        grid-area: best-choice;
+        background-color: #93B6B7;
+        position: relative;
+    }
+    .best-choice .content h3{
+        position: relative;
+        top: 50px;
+        left: 300px;
+        max-width: 300px;
+        font-family: "arvo",sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+
+
+    }
+    .best-choice  p{
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: #fa684f;
+        font-size: 8px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-family: "open sens",sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+    } 
+    .best-choice .picture {
+        width: 80%;
+        margin: auto;
+    }
+    .best-choice .picture img {
+        width: 50%;
+    }
+    .best-choice .picture .img1{
+        width: 110%;
+        position: relative;
+        top:50px;
+        color: #8BAAAB;
+        display: inline-block;
+    }
+    .best-choice .picture .img2{
+        width: 100%;
+        bottom: 0px;
+        right: 9%;
+        position: absolute;
+        display: inline-block;
+
+
+    }
+    .connect-with {
+        grid-area: connect-with;
+        background-color: #38D5F4;
+       
+    }
+    .connect-with .content{
+        display: flex;
+        width: 240px;
+        height: 240px;
+        padding-right: 34px;
+        padding-left: 34px;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #35cfed;
+        text-align: center;
+        position: relative;
+        top: -10px;
+        left: 20%;
+    }
+    .connect-with .content h3{
+        font-family: "arvo",sans-serif;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .connect-with .content img{
+        width: 35%;
+        margin-bottom: 10px;
+    }
+    .much-better {
+        grid-area: much-better;
+        background-color: #F7F8F9;
+     position: relative;
+    }
+    .much-better .content .box{
+        position: absolute;
+        left: 40%;
+        top: 50px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 5px;
+        background-color: #7BC424;
+        font-size: 8px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-family: "open sens",sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .much-better .content h3{
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        max-width: 200px;
+        text-align: center;
+    }
+    .more-than {
+        grid-area: more-than;
+        background-color: #2C2C2C;
+       display: flex;
+       position: relative;
+    }
+    .more-than .picture img{
+        position: relative;
+        top: -40px;
+        left: 20px;
+        width: 50%;
+    }
+
+    .more-than .content {
+        text-align: start;
+        position: relative;
+        top: 80px;
+        right: 90px;
+        max-width: 210px;
+    }
+    .more-than .content h3{
+        color: #fff;
+        font-family: "arvo",sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+    }
